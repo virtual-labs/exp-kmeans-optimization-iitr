@@ -1,0 +1,52 @@
+[
+  {
+    "question": "The 'Elbow' in the Elbow method refers to the point on the graph where the curve starts to _________ significantly.",
+    "answers": {
+      "a": "rise",
+      "b": "fall",
+      "c": "level off",
+      "d": "flatten"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "The Elbow method is not suitable for evaluating clustering performance when the data is ___________.",
+    "answers": {
+      "a": "categorical",
+      "b": "continuous",
+      "c": "high-dimensional",
+      "d": "labeled"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "The Elbow method is commonly used in which type of unsupervised learning algorithm?",
+    "answers": {
+      "a": "Decision Trees",
+      "b": "Linear Regression",
+      "c": "K-Mean Clustering",
+      "d": "Support Vector Machines"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In the Silhouette method, if the average Silhouette score is close to 1, it suggests that the clustering is ___________.",
+    "answers": {
+      "a": "overfitting",
+      "b": "optimal",
+      "c": "underfitting",
+      "d": "biased"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The Silhouette method helps to identify the appropriate number of clusters that maximizes __________ and minimizes cluster overlap.",
+    "answers": {
+      "a": "variance",
+      "b": "accuracy",
+      "c": "cohesion",
+      "d": "separation"
+    },
+    "correctAnswer": "d"
+  }
+]

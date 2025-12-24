@@ -1,0 +1,9 @@
+
+/home/runner/work/exp-kmeans-optimization-iitr/exp-kmeans-optimization-iitr/experiment/simulation/js/E1.js
+  479:10  error  Parsing error: Identifier 'disableDeleteButton' has already been declared
+
+/home/runner/work/exp-kmeans-optimization-iitr/exp-kmeans-optimization-iitr/experiment/simulation/js/S1.js
+  489:10  error  Parsing error: Identifier 'disableDeleteButton' has already been declared
+
+✖ 2 problems (2 errors, 0 warnings)
+

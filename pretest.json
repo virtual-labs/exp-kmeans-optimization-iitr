@@ -1,0 +1,52 @@
+[
+  {
+    "question": "The Elbow method is used for determining the optimal number of __________ in a clustering algorithm.",
+    "answers": {
+      "a": "Data points",
+      "b": "Clusters",
+      "c": "Dimensions",
+      "d": "Features"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "In the Elbow method, the x-axis represents the number of ___________.",
+    "answers": {
+      "a": "Data points",
+      "b": "Clusters",
+      "c": "Iterations",
+      "d": "Centroids"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "The Elbow method plots the ___________ against the number of clusters.",
+    "answers": {
+      "a": "Variance",
+      "b": "Distance",
+      "c": "Similarity",
+      "d": "Silhouette coefficient"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "The Silhouette method evaluates the __________ of clustering results.",
+    "answers": {
+      "a": "Accuracy",
+      "b": "Complexity",
+      "c": "Quality",
+      "d": "Interpretability"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Silhouette score ranges from _________ to +1, where higher values indicate better-defined clusters.",
+    "answers": {
+      "a": "-1",
+      "b": "0",
+      "c": "-0.5",
+      "d": "1"
+    },
+    "correctAnswer": "a"
+  }
+]
