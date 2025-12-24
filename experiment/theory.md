@@ -13,7 +13,7 @@ The main aim of this algorithm is to minimize the sum of distances between the d
 The elbow method is a technique used to determine the optimal number of clusters in a dataset for the k-means clustering algorithm. The method involves plotting the explained variation as a function of the number of clusters and selecting the "elbow" of the curve as the number of clusters to use. This is because, as the number of clusters increases, the variation within each cluster decreases, and at some point, the decrease in variation becomes less pronounced. The point at which this occurs is considered to be the optimal number of clusters for the dataset.
 
 <center>  
-<img style="mix-blend-mode: darken;" width="50%" src="images\E1.jpg" alt="Elbow point (optimal number of Cluster)">
+<img style="mix-blend-mode: darken;" width="400px" src="images\E1.jpg" alt="Elbow point (optimal number of Cluster)">
 <figcaption><strong>Fig. 1: Elbow point (optimal number of Cluster)</strong></figcaption>
 </center>
 
@@ -27,7 +27,7 @@ The elbow method is a technique used to determine the optimal number of clusters
 1. Run K-means for a range of K's. <br>
 2. Calculate the Sum of Squares of the distances from the cluster mean.<br>
 <center>  
-<img style="mix-blend-mode: darken;" width="35%" src="images\5_Eqn_1.jpg" alt="Elbow point (optimal number of Cluster)">
+<img style="mix-blend-mode: darken;" src="images\5_Eqn_1.jpg" alt="Elbow point (optimal number of Cluster)">
 </center>
 <p>Where:</p>
 <ul>
@@ -42,7 +42,7 @@ The elbow method is a technique used to determine the optimal number of clusters
 The silhouette method is a technique used to interpret and validate the consistency within clusters of data. It provides a succinct graphical representation of how well each object has been classified. The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. If most objects have a high value, then the clustering configuration is appropriate. If many points have a low or negative value, then the clustering configuration may have too many or too few clusters.
 
 <center>  
-<img style="mix-blend-mode: darken;" width="50%" src="images\s1.jpg" alt="Silhouette score (optimal number of Cluster)">
+<img style="mix-blend-mode: darken;" width="500px" src="images\s1.jpg" alt="Silhouette score (optimal number of Cluster)">
 <figcaption><strong>Fig. 2: Silhouette score (optimal number of Cluster)</strong></figcaption>
 </center>
 
