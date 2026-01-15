@@ -1,0 +1,1 @@
+#### The aim of the experiment is to study how to calculate the optimal value of 'K' in K-means using Elbow and Silhouette methods.
