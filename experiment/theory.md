@@ -1,4 +1,4 @@
-### **Introduction**
+#### **Introduction**
 
 K-means Clustering is an unsupervised learning algorithm that is used to solve clustering problems in machine learning or data science. It groups the unlabeled dataset into different clusters. Here’s how it works:
 
@@ -9,7 +9,7 @@ K-means Clustering is an unsupervised learning algorithm that is used to solve c
 
 The main aim of this algorithm is to minimize the sum of distances between the data point and their corresponding clusters. The value of K should be predetermined in this algorithm. The algorithm takes the unlabeled dataset as input, divides the dataset into K-number of clusters, and repeats the process until it does not find the best clusters. It’s a centroid-based algorithm, where each cluster is associated with a centroid.
 
-### **Elbow method**
+#### **Elbow method**
 The elbow method is a technique used to determine the optimal number of clusters in a dataset for the k-means clustering algorithm. The method involves plotting the explained variation as a function of the number of clusters and selecting the "elbow" of the curve as the number of clusters to use. This is because, as the number of clusters increases, the variation within each cluster decreases, and at some point, the decrease in variation becomes less pronounced. The point at which this occurs is considered to be the optimal number of clusters for the dataset.
 
 <center>  
@@ -38,7 +38,7 @@ The elbow method is a technique used to determine the optimal number of clusters
 4. Visually pick the K at the elbow.<br>
 </p>
 
-### **Silhouette Method**
+#### **Silhouette Method**
 The silhouette method is a technique used to interpret and validate the consistency within clusters of data. It provides a succinct graphical representation of how well each object has been classified. The silhouette value is a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. If most objects have a high value, then the clustering configuration is appropriate. If many points have a low or negative value, then the clustering configuration may have too many or too few clusters.
 
 <center>  
@@ -54,14 +54,22 @@ The silhouette method is a technique used to interpret and validate the consiste
 The silhouette coefficient ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
 
 #### **The steps to calculate the silhouette coefficient for a particular data point:**
-1. Calculate the average distance between the data point and all other data points in the same cluster. This is known as "a(i)".
+<ol>
+<li>
+<b>Cohesion :</b> Coupling (also called cohesion) measures how closely related or similar the data points are within the same cluster. High coupling indicates that data points inside a cluster are tightly grouped and well connected.<br>
+Calculate the average distance between the data point and all other data points in the same cluster. This is known as "a(i)".
 <center><img src="images/ai.svg" class="formula-img" alt="" width="200px"></center>
-
-2. Calculate the average distance between the data point and all other data points in the nearest cluster. This is known as "b(i)".
+</li>
+<li>
+<b>Separation :</b> Separation measures how far apart or distinct different clusters are from each other. High separation indicates that clusters are well separated and clearly distinguishable.<br>
+Calculate the average distance between the data point and all other data points in the nearest cluster. This is known as "b(i)".
 <center><img src="images/bi.svg" class="formula-img" alt="" width="200px"></center>
-
-3. Calculate the silhouette coefficient `s(i)` for the data point using the formula "s(i)".
+</li>
+<li>
+Calculate the silhouette coefficient `s(i)` for the data point using the formula "s(i)".
 <center><img src="images/si.svg" class="formula-img" alt="" width="200px"></center>
+</li>
+</ol>
 
 ### **Difference between Elbow method and Silhouette method**
 The Elbow Method and the Silhouette Method are two different ways of finding the optimal number of clusters (K) in a dataset.
@@ -70,5 +78,5 @@ The Elbow Method and the Silhouette Method are two different ways of finding the
 
 <b>Silhouette Method:</b> This method uses the average distance between the data points within the same cluster and the nearest cluster to measure the cohesion and separation of clusters. It is more comprehensive and accurate. The silhouette score ranges from -1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
 
-### **Conclusion**
+#### **Conclusion**
 The elbow method and the silhouette method are two techniques used to determine the optimal number of clusters in a dataset for the k-means clustering algorithm. Both methods are based on measuring the similarity or dissimilarity between the data points and the cluster centroids. The main difference between the two methods is that the elbow method uses the sum of squared distances (SSE) as the variation measure, while the silhouette method uses the silhouette coefficient as the consistency measure. The elbow method plots the SSE against the number of clusters and looks for a point where the curve bends or elbows. The silhouette method plots the silhouette coefficient against the number of clusters and looks for a point where the curve reaches its maximum. Both methods have advantages and disadvantages, such as simplicity, reliability, and sensitivity to different factors. Therefore, it is advisable to use both methods together and compare their results to find the best number of clusters for a given dataset.
